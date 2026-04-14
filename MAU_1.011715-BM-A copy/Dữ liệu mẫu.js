@@ -1,0 +1,16 @@
+{
+	"noiKhaiSinhCityName": "_cityName",
+	"noiKhaiSinhCityCode": "_cityCode",
+	"noiKhaiSinhWardName": "_wardName",
+	"noiKhaiSinhWardCode": "_wardCode",
+	"thuongTruCityName": "_cityName",
+	"thuongTruCityCode": "_cityCode",
+	"thuongTruWardName": "_wardName",
+	"thuongTruWardCode": "_wardCode",
+	"hoVaTen": "_applicantName",
+	"birthDate": "_applicantBirthdayQG",
+	"noiKhaiSinhChiTiet": "_address",
+	"thuongTruChiTiet": "_address",
+	"noiDangKy": "_govAgencyName",
+	"soCCCD": "_applicantIdNo",
+}

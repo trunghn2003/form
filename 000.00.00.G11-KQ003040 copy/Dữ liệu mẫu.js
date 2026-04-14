@@ -1,0 +1,16 @@
+{
+    "noiNopHsCityName": "_cityName",
+	"noiNopHsWardName": "_wardName",
+	"noiKhaiSinhCityName": "_cityName",
+	"noiKhaiSinhWardName": "_wardName",
+	"cityName": "_cityName",
+    "cityCode": "_cityCode",
+	"wardName": "_wardName",
+	"wardCode": "_wardCode",
+	"hoVaTen": "_applicantName",
+	"birthDate": "_applicantBirthdayQG",
+	"noiKhaiSinhChiTiet": "_address",
+	"diaChiChiTiet": "_address",
+	"noiDangKy": "_govAgencyName",
+	"soCCCD": "_applicantIdNo",
+}
