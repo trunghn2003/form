@@ -1392,7 +1392,7 @@
                     }
                 },
             },
-        ].forEach(function ({ id, keyLabel, keyValue, api, onchange, keyChange, valueChange, label: fieldLabel, fData: customFData }) {
+        ].forEach(function ({ id, keyLabel, keyValue, api, onchange, keyChange, valueChange, label: fieldLabel, fData: customFData, number: pageSizeOverride }) {
             var field = control.childrenByPropertyId[id];
             if (!field) return;
 
@@ -1426,7 +1426,7 @@
                 keyStart: 'start',
                 keyEnd: 'end',
                 start: 0,
-                number: 20,
+                number: pageSizeOverride || 20,
                 keyLabel: keyLabel,
                 keyValue: keyValue,
                 keySearch: 'keyword',
@@ -1452,8 +1452,9 @@
                 id: 'danTocCode',
                 keyLabel: 'itemName',
                 keyValue: 'itemCode',
-                api: '/o/secure/rest/v2/tsqs/dictitem?collectionCode=ETHNIC_LIST&start=0&end=200',
+                api: '/o/secure/rest/v2/tsqs/dictitem?collectionCode=ETHNIC_LIST',
                 label: savedData.danTocName || '',
+                number: 200,
                 onchange: function (obj) {
                     if (control.childrenByPropertyId['danTocName']) {
                         control.childrenByPropertyId['danTocName'].setValue(obj.label);
@@ -1474,8 +1475,9 @@
                 id: 'tonGiaoCode',
                 keyLabel: 'itemName',
                 keyValue: 'itemCode',
-                api: '/o/secure/rest/v2/tsqs/dictitem?collectionCode=RELIGION_LIST&start=0&end=200',
+                api: '/o/secure/rest/v2/tsqs/dictitem?collectionCode=RELIGION_LIST',
                 label: savedData.tonGiaoName || '',
+                number: 200,
                 onchange: function (obj) {
                     if (control.childrenByPropertyId['tonGiaoName']) {
                         control.childrenByPropertyId['tonGiaoName'].setValue(obj.label);
@@ -1520,7 +1522,7 @@
                     }
                 },
             },
-        ].forEach(function ({ id, keyLabel, keyValue, api, onchange, fData, optionDefault, keyChange, valueChange, label: fieldLabel }) {
+        ].forEach(function ({ id, keyLabel, keyValue, api, onchange, fData, optionDefault, keyChange, valueChange, label: fieldLabel, number: pageSizeOverride }) {
             var field = control.childrenByPropertyId[id];
             if (!field) return;
             var inputEl = $(field.getFieldEl()).find('input[type="text"]')[0];
@@ -1537,7 +1539,7 @@
                 keyStart: 'start',
                 keyEnd: 'end',
                 start: 0,
-                number: 20,
+                number: pageSizeOverride || 20,
                 keyLabel: keyLabel,
                 keyValue: keyValue,
                 keySearch: 'keyword',
