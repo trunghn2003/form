@@ -283,8 +283,9 @@
 							: $F{diemThiTHPT}
 								.replaceAll("\\[\\{", "").replaceAll("\\}\\]", "")
 								.replaceAll("\\},\\{", "; ")
-								.replaceAll("\"diem\":\"([^\"]*)\",\"tenMon\":\"([^\"]*)\",\"tenMonCode\":\"[^\"]*\"", "$2: $1")
 								.replaceAll("\"", "")
+								.replaceAll("(?:[^;]*?)tenMon:([^,;]+)(?:[^;]*?)diem:([^,;]+)(?:[^;]*)", "$1: $2")
+								.replaceAll("(?:[^;]*?)diem:([^,;]+)(?:[^;]*?)tenMon:([^,;]+)(?:[^;]*)", "$2: $1")
 					)
 				]]></textFieldExpression>
 			</textField>
@@ -300,8 +301,9 @@
 							: $F{diemThiCaoDang}
 								.replaceAll("\\[\\{", "").replaceAll("\\}\\]", "")
 								.replaceAll("\\},\\{", "; ")
-								.replaceAll("\"diem\":\"([^\"]*)\",\"tenMon\":\"([^\"]*)\",\"tenMonCode\":\"[^\"]*\"", "$2: $1")
 								.replaceAll("\"", "")
+								.replaceAll("(?:[^;]*?)tenMon:([^,;]+)(?:[^;]*?)diem:([^,;]+)(?:[^;]*)", "$1: $2")
+								.replaceAll("(?:[^;]*?)diem:([^,;]+)(?:[^;]*?)tenMon:([^,;]+)(?:[^;]*)", "$2: $1")
 					)
 				]]></textFieldExpression>
 			</textField>
@@ -317,8 +319,13 @@
 							: $F{doatGiai}
 								.replaceAll("\\[\\{", "").replaceAll("\\}\\]", "")
 								.replaceAll("\\},\\{", "; ")
-								.replaceAll("\"monThi\":\"([^\"]*)\",\"tenGiai\":\"([^\"]*)\",\"nam\":\"([^\"]*)\"", "Giải $2 (Môn: $1, Năm: $3)")
 								.replaceAll("\"", "")
+								.replaceAll("(?:[^;]*?)monThi:([^,;]+)(?:[^;]*?)tenGiai:([^,;]+)(?:[^;]*?)nam:([^,;]+)(?:[^;]*)", "Giải $2 (Môn: $1, Năm: $3)")
+								.replaceAll("(?:[^;]*?)monThi:([^,;]+)(?:[^;]*?)nam:([^,;]+)(?:[^;]*?)tenGiai:([^,;]+)(?:[^;]*)", "Giải $3 (Môn: $1, Năm: $2)")
+								.replaceAll("(?:[^;]*?)tenGiai:([^,;]+)(?:[^;]*?)monThi:([^,;]+)(?:[^;]*?)nam:([^,;]+)(?:[^;]*)", "Giải $1 (Môn: $2, Năm: $3)")
+								.replaceAll("(?:[^;]*?)tenGiai:([^,;]+)(?:[^;]*?)nam:([^,;]+)(?:[^;]*?)monThi:([^,;]+)(?:[^;]*)", "Giải $1 (Môn: $3, Năm: $2)")
+								.replaceAll("(?:[^;]*?)nam:([^,;]+)(?:[^;]*?)monThi:([^,;]+)(?:[^;]*?)tenGiai:([^,;]+)(?:[^;]*)", "Giải $3 (Môn: $2, Năm: $1)")
+								.replaceAll("(?:[^;]*?)nam:([^,;]+)(?:[^;]*?)tenGiai:([^,;]+)(?:[^;]*?)monThi:([^,;]+)(?:[^;]*)", "Giải $2 (Môn: $3, Năm: $1)")
 					)
 				]]></textFieldExpression>
 			</textField>
