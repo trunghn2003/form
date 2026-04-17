@@ -112,7 +112,7 @@
 				]]></textFieldExpression>
 			</textField>
 
-			<textField isBlankWhenNull=" true\>
+			<textField>
 				<reportElement x="60" y="160" width="495" height="16" uuid="17c8d9e0-1f2a-4b3c-5d6e-708192a3b4c5"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[
@@ -131,7 +131,7 @@
 				]]></textFieldExpression>
 			</textField>
 
-			<textField isBlankWhenNull=" true\>
+			<textField>
 				<reportElement x="60" y="180" width="495" height="16" uuid="28d9e0f1-2a3b-4c5d-6e70-8192a3b4c5d6"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[
@@ -150,7 +150,7 @@
 				]]></textFieldExpression>
 			</textField>
 
-			<textField isBlankWhenNull="true">
+			<textField>
 				<reportElement positionType="Float" x="60" y="200" width="495" height="16" uuid="39e0f1a2-3b4c-4d5e-6f70-8192a3b4c5d7"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[
@@ -186,7 +186,7 @@
 				]]></textFieldExpression>
 			</textField>
 
-			<textField isBlankWhenNull=" true\>
+			<textField>
 				<reportElement positionType="Float" x="60" y="258" width="495" height="16" uuid="5b02c3d4-5e6f-4708-8192-a3b4c5d6e7f8"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[
@@ -198,7 +198,7 @@
 					)
 				]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull=" true\>
+			<textField>
 				<reportElement positionType="Float" x="60" y="278" width="495" height="16" uuid="6c13d4e5-6f70-4819-92a3-b4c5d6e7f809"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[
@@ -211,7 +211,7 @@
 				]]></textFieldExpression>
 			</textField>
 
-			<textField isBlankWhenNull=" true\>
+			<textField>
 				<reportElement positionType="Float" x="60" y="300" width="495" height="16" uuid="7d24e5f6-7081-492a-a3b4-c5d6e7f8091a"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[
@@ -228,7 +228,7 @@
 				]]></textFieldExpression>
 			</textField>
 
-			<textField isBlankWhenNull=" true\>
+			<textField>
 				<reportElement positionType="Float" x="60" y="320" width="495" height="16" uuid="8e35f607-8192-4a3b-b4c5-d6e7f8091a2b"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[
@@ -240,7 +240,7 @@
 					)
 				]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull=" true\>
+			<textField>
 				<reportElement positionType="Float" x="60" y="340" width="495" height="16" uuid="9f460718-92a3-4b4c-c5d6-e7f8091a2b3c"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[
@@ -253,7 +253,7 @@
 				]]></textFieldExpression>
 			</textField>
 
-			<textField isBlankWhenNull=" true\>
+			<textField>
 				<reportElement positionType="Float" x="60" y="362" width="495" height="16" uuid="a0571829-a3b4-4c5d-d6e7-f8091a2b3c4d"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[
@@ -306,7 +306,7 @@
 				]]></textFieldExpression>
 			</textField>
 
-			<textField isBlankWhenNull=" true\>
+			<textField>
 				<reportElement positionType="Float" x="60" y="440" width="495" height="16" uuid="d38a4b5c-d6e7-4f80-91a2-b3c4d5e6f708"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[
